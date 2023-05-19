@@ -17,7 +17,7 @@ function Login() {
           <div className="sideinfo">
             <h5>Forgotten Password ?</h5>
             <h5 className="dot">.</h5>
-            <Link to="/register" style={{ textDecoration: "none" }}>
+            <Link className="register_link" to="/register" >
               <h5 className="register">Sign Up For Facebook</h5>
             </Link>
           </div>
