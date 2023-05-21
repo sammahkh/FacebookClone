@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import loginlogo from "./assets/loginlogo.png";
+import facebooklogo from "../../assets/facebooklogo.png"
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 import { auth } from "./config/firebase";
@@ -33,7 +33,7 @@ function Login() {
   };
   return (
     <div className="login">
-      <img src={loginlogo} className="login_logo"></img>
+      <img src={facebooklogo} className="login_logo"></img>
       <div className="login_container">
         <h3>Log In To Facebook</h3>
         <form>
