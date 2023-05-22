@@ -1,8 +1,26 @@
-import react from "react";
+import React, { useState } from "react";
 import "./SignUp.css";
 import facebooklogo from "../../assets/facebooklogo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { auth } from "../config/firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+
 function SignUp() {
+  const navigate = useNavigate();
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [birthday, setBirthday] = useState([]);
+  const [gender, setGender] = useState("");
+
+  const register = (event) => {
+    event.preventDefault();
+    createUserWithEmailAndPassword(auth, email, password).then(() => {
+      navigate("/");
+    });
+  };
+
   return (
     <div className="register">
       <img src={facebooklogo} class="register__logo" />
@@ -16,22 +34,45 @@ function SignUp() {
               className="register__name"
               type="name"
               placeholder="First Name"
+              onChange={(e) => {
+                setFirstName(e.target.value);
+              }}
+              required
             />
             <input
               className="register__name"
               type="name"
               placeholder="Last Name"
+              onChange={(e) => {
+                setLastName(e.target.value);
+              }}
+              required
             />
           </div>
           <center>
-            <input type="email" placeholder="Email" />
+            <input
+              type="email"
+              placeholder="Email"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+              required
+            />
           </center>
           <center>
-            <input type="password" placeholder="New Password" />
+            <input
+              type="password"
+              placeholder="New Password"
+              onChange={(event) => setPassword(event.target.value)}
+              required
+            />
           </center>
           <h5 className="register__date">Date Of Birth</h5>
           <div className="row">
-            <select className="register__date2">
+            <select
+              className="register__date2"
+              onChange={(e) => setBirthday([...birthday, e.target.value])}
+            >
               <option value="Day">Day</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -66,7 +107,10 @@ function SignUp() {
               <option value="31">31</option>
             </select>
 
-            <select className="register__date3">
+            <select
+              className="register__date3"
+              onChange={(e) => setBirthday([...birthday, e.target.value])}
+            >
               <option value="Day">Month</option>
               <option value="1">Jan</option>
               <option value="2">Feb</option>
@@ -82,7 +126,10 @@ function SignUp() {
               <option value="12">Dec</option>
             </select>
 
-            <select className="register__date3">
+            <select
+              className="register__date3"
+              onChange={(e) => setBirthday([...birthday, e.target.value])}
+            >
               <option value="2018">2020</option>
               <option value="2018">2019</option>
               <option value="2018">2018</option>
@@ -207,16 +254,34 @@ function SignUp() {
           <div className="register__radiocontainer">
             <div className="wrapper">
               <label>Female</label>
-              <input type="radio" name="gender" value="Female" />
+              <input
+                onChange={(e) => setGender(e.target.value)}
+                required
+                type="radio"
+                name="gender"
+                value="Female"
+              />
             </div>
 
             <div className="wrapper">
               <label>Male</label>
-              <input type="radio" name="gender" value="Male" />
+              <input
+                onChange={(e) => setGender(e.target.value)}
+                required
+                type="radio"
+                name="gender"
+                value="Male"
+              />
             </div>
             <div className="wrapper">
               <label>Other</label>
-              <input type="radio" name="gender" value="Other" />
+              <input
+                onChange={(e) => setGender(e.target.value)}
+                required
+                type="radio"
+                name="gender"
+                value="Other"
+              />
             </div>
           </div>
           <p className="register__policy">
@@ -226,7 +291,11 @@ function SignUp() {
           </p>
 
           <center>
-            <button type="submit" className="register__register">
+            <button
+              onClick={register}
+              type="submit"
+              className="register__register"
+            >
               Sign Up
             </button>
           </center>
