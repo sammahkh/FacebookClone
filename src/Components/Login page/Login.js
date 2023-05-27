@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import loginlogo from "../../assets/loginlogo.png";
+import facebooklogo from "../../assets/facebooklogo.png";
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
-import { auth } from "./config/firebase";
+import { auth } from "../config/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 function Login() {
@@ -16,15 +16,9 @@ function Login() {
         navigate("/");
       })
       .catch((e) => {
-        if (
-          e.message ===
-          "Firebase: Error (auth/wrong-password)."
-        ) {
+        if (e.message === "Firebase: Error (auth/wrong-password).") {
           alert("Wrong Passwored , Please try again !");
-        } else if (
-          e.message ===
-          "Firebase: Error (auth/user-not-found)."
-        ) {
+        } else if (e.message === "Firebase: Error (auth/user-not-found).") {
           alert("Please check your credentials again");
         } else {
           alert(e.message);
@@ -33,7 +27,7 @@ function Login() {
   };
   return (
     <div className="login">
-      <img src={loginlogo} className="login_logo"></img>
+      <img src={facebooklogo} className="login_logo"></img>
       <div className="login_container">
         <h3>Log In To Facebook</h3>
         <form>
@@ -41,11 +35,13 @@ function Login() {
             type="email"
             placeholder="Enter Your Email"
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
           <input
             type="password"
             placeholder="Enter Your Password"
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
           <button onClick={login} type="submit" className="login_login">
             Log In
