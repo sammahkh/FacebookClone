@@ -4,12 +4,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Components/Login page/Login";
 import SignUp from "./Components/Register page/SignUp";
 import Header from "./Components/Home page/Header/Header";
+import RightSidebar from "./Components/Home page/RightSidebar/RightSidebar";
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route path="/" Component={Header} />
+          <Route path="/" Component={RightSidebar} />
           <Route path="/login" Component={Login} />
           <Route path="/register" Component={SignUp} />
         </Routes>
