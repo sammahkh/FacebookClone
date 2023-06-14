@@ -1,0 +1,15 @@
+.Icon {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Icon:hover {
+    background-color: #baccc349;
+}
+
+.Icon>P {
+    margin-top: 12px;
+    font-weight: 500;
+}
