@@ -3,8 +3,8 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Components/Login page/Login";
 import SignUp from "./Components/Register page/SignUp";
-import Header from "./Components/Home page/Header";
 import LeftSidebar from "./Components/Home page/LeftSidebar/LeftSidebar";
+import Header from "./Components/Home page/Header/Header";
 function App() {
   return (
     <div className="app">
