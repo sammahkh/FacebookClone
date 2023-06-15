@@ -1,0 +1,28 @@
+.Lside {
+    height: 50rem;
+    width: 21%;
+    left: 0;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+    height: 50px;
+
+}
+
+.Profile:hover {
+    background-color: #baccc349;
+}
+
+.Profile>img {
+    border-radius: 50%;
+    width: 10%;
+    margin-right: 10px;
+    margin-left: 20px;
+}
