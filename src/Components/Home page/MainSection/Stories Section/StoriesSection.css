@@ -13,14 +13,17 @@
     margin-left: 20px;
 }
 
-.icon {
+.top .icon {
     display: flex;
-    margin-left: 80px;
     margin-bottom: 15px;
+    margin-right: 80px;
+    width: 250px;
 }
 
 .top {
     display: flex;
+    justify-content: center;
+    padding-left: 80px;
 
 }
 
@@ -28,9 +31,12 @@
     color: black;
 }
 
-.icon:hover {
+.top .icon:hover {
     cursor: pointer;
-
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    width: 250px;
 
 }
 

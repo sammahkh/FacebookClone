@@ -1,11 +1,11 @@
 .postsection {
   display: grid;
   height: 25rem;
-  width: 500px;
-  margin-left: 5%;
+  width: 555px;
   border-radius: 10px;
   height: 130px;
-
+  margin-left: 20px;
+  background-color: white;
 
 }
 
@@ -27,13 +27,13 @@
 }
 
 input[type=Mind] {
-  width: 440px;
-  margin: 15px 0;
+  width: 460px;
+  margin: 15px 5px;
   height: 2.2rem;
   display: inline;
   border: 1px solid #ccc;
   border-radius: 12px;
-  margin-left: 0;
+  margin-left: 9px;
   box-sizing: border-box;
   font-size: 1rem;
 }
@@ -46,9 +46,10 @@ input:hover {
 
 .iconssectoin {
   display: flex;
-  width: 500px;
+  width: 450px;
   justify-content: space-between;
   margin-top: -35px;
+  margin-left: 40px;
 }
 
 .iconssectoin .icon>p {
@@ -61,7 +62,6 @@ input:hover {
   cursor: pointer;
   background-color: #ccc;
   height: 2.2rem;
-
   border: 1px solid #ccc;
   border-radius: 12px;
 }
