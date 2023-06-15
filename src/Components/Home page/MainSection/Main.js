@@ -1,7 +1,7 @@
-import React from 'react'
-import AddPost from './Post Section/AddPost'
-import Posted from './Post Section/Posted'
-import StoriesSection from './Stories Section/StoriesSection'
+import React from 'react';
+import AddPost from './Post Section/AddPost';
+import Posted from './Post Section/Posted';
+import StoriesSection from './Stories Section/StoriesSection';
 import"./Main.css";
 function Main() {
   return (
@@ -9,7 +9,6 @@ function Main() {
         <StoriesSection/>
         <AddPost/>
         <Posted/>
-
     </div>
   )
 }
