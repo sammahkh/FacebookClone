@@ -8,13 +8,15 @@
     margin-top: 29px;
 }
 
-.top {
+.Posted .top {
     display: flex;
-    justify-content: space-between;
+    width: 500px;
+    margin-left: -47px;
 }
 
 .postinfo {
     display: flex;
+    margin-right: 160px;
 }
 
 .postinfo>p {
@@ -22,11 +24,12 @@
     font-weight: 600;
     font-size: 1rem;
     margin-left: 8px;
+
 }
 
 .update {
     margin-top: 14px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .edit {
@@ -39,13 +42,14 @@
 }
 
 .caption {
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 15px;
 }
 
 .reaction {
     display: flex;
     margin-top: 5px;
+    margin-left: 38px;
 }
 
 .reaction .icon>p {
@@ -64,5 +68,9 @@
     border: 1px solid #ccc;
     border-radius: 12px;
 
+}
+
+.FacebookImg {
+    margin-left: 40px;
 
 }
