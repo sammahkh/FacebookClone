@@ -1,0 +1,56 @@
+.StorySection {
+    display: flex;
+    width: 500px;
+    margin: 20px 0;
+    color: white;
+    font-size: 1.5rem;
+    height: 20rem;
+    justify-content: flex-start;
+    padding-left: 5%;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    margin-left: 20px;
+}
+
+.icon {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+
+.top {
+    display: flex;
+
+}
+
+.icon>p {
+    color: black;
+}
+
+.icon:hover {
+    cursor: pointer;
+
+
+}
+
+.stories {
+    display: flex;
+    margin-left: -40px;
+}
+
+.more {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 50%;
+    margin-left: 420px;
+    margin-top: -120px;
+    text-align: center;
+
+}
+
+.more:hover {
+    cursor: pointer;
+
+}

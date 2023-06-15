@@ -1,0 +1,68 @@
+.Posted {
+    display: grid;
+    height: auto;
+    width: 500px;
+    align-items: flex-start;
+    background-color: white;
+    margin-left: 0;
+    margin-top: 29px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postinfo {
+    display: flex;
+}
+
+.postinfo>p {
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+.update {
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+.edit {
+    margin-top: 10px;
+}
+
+.edit:hover {
+    cursor: pointer;
+
+}
+
+.caption {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.reaction {
+    display: flex;
+    margin-top: 5px;
+}
+
+.reaction .icon>p {
+    margin-top: -30px;
+    margin-left: 40px;
+
+}
+
+.reaction .icon {
+    margin-left: 60px;
+}
+
+.reaction .icon:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+
+
+}
