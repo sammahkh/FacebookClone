@@ -49,7 +49,7 @@ function Posted() {
         <img
           src="https://i.pinimg.com/originals/64/1e/34/641e34a438b3950236f1b1f4ec1a5b4d.jpg"
           alt="dp"
-          style={{ height: "auto", width: "100%" }}
+          // style={{ height: "auto", width: "100%" }}
         />
       </div>
       <div className="reaction">

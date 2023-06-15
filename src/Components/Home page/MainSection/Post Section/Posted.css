@@ -1,11 +1,12 @@
 .Posted {
     display: grid;
     height: auto;
-    width: 500px;
+    width: 570px;
     align-items: flex-start;
     background-color: white;
-    margin-left: 0;
+    margin-left: 10px;
     margin-top: 29px;
+    border-radius: 10px;
 }
 
 .Posted .top {

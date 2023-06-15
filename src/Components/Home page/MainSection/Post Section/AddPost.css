@@ -1,11 +1,11 @@
 .postsection {
   display: grid;
   height: 25rem;
-  width: 500px;
-  margin-left: 5%;
+  width: 555px;
   border-radius: 10px;
   height: 130px;
-  margin-left: 29px;
+  margin-left: 20px;
+  background-color: white;
 
 }
 
