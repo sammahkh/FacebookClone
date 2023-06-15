@@ -1,0 +1,15 @@
+.middleHeader {
+    display: flex;
+    flex: 0%;
+    justify-content: center;
+    width: 1%;
+    margin-left: 0;
+}
+
+.leftIcon {
+    display: flex;
+    cursor: pointer;
+    padding: 0 25px;
+    margin-right: 10px;
+
+}
